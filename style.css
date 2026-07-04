@@ -34,4 +34,19 @@ p{
     background-color: green;
 }
 
+img{
+    width: 100px;
+    height: 100px;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.main img {
+    width: 20%;
+    height: 200px;
+    object-fit: cover;
+}
 
