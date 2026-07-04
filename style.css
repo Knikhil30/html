@@ -1,52 +1,104 @@
 body{
-    padding: 0px;
-    margin: 0px;
-    width: 100vw;
-    height: 100vh;
+    margin:0;
+    padding:0;
 }
+
 p{
-    margin: 0px;
+    margin:0;
 }
 
 .header{
-    width: 100%;
-    height: 10%;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width:100%;
+    height:10vh;
+    background:red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .sub-container{
-    display: flex;
-    height: 90%;
+    display:flex;
+    height:90vh;
 }
 
 .side-bar{
-    width: 15%;
+    width:15%;
     height: 100%;
-    background-color: aqua;
+    background:aqua;
 }
 
 .main{
-    width: 85%;
+    width:85%;
     height: 100%;
-    background-color: green;
+    background:green;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+    /* padding:20px; */
+
+    justify-items:center;
+    align-items:start;
+
+    overflow-y:auto;
 }
 
-img{
-    width: 100px;
-    height: 100px;
-}
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 25px;
+.image{
+    width:220px;
+    height:400px;
+    margin-top: 10px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+
+    border-radius:10px;
 }
 
-.main img {
-    width: 20%;
-    height: 200px;
-    object-fit: cover;
+.image001{
+    background-image:url("./images/image001.webp");
 }
 
+.image002{
+    background-image:url("./images/image002.avif");
+}
+
+.image003{
+    background-image:url("./images/image003.jpg");
+}
+
+.image004{
+    background-image:url("./images/image004.jpg");
+}
+
+.image005{
+    background-image:url("./images/image005.jpg");
+}
+
+.image006{
+    background-image:url("./images/image006.jpg");
+}
+
+.image007{
+    background-image:url("./images/image007.jpg");
+}
+
+.image008{
+    background-image:url("./images/image008.jpg");
+}
+
+.image009{
+    background-image:url("./images/image009.jpeg");
+}
+
+.image010{
+    background-image:url("./images/image010.jpg");
+}
+
+@media (max-width: 768px) {
+    /* CSS code here */
+    .main{
+          grid-template-columns:repeat(2,1fr);
+    }
+
+}
